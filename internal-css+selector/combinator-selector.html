@@ -13,6 +13,14 @@
       /* article > span {
         color: blueviolet;
       } */
+
+      /* div + h1 + h2 {
+        color: red;
+      } */
+
+      div ~ h1 {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -21,5 +29,10 @@
       <span>hello everyone</span>
     </article>
     <span>hello</span>
+    <hr />
+    <div>hello</div>
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h1>hello</h1>
   </body>
 </html>
