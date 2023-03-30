@@ -1,0 +1,28 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.floating-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+p {
+  margin-block-end: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  padding-block: 20px;
+  text-align: center;
+  background-color: antiquewhite;
+}

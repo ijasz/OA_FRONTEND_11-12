@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 150px;
+  width: 150px;
+  background-color: brown;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.circle:hover {
+  scale: 1.5;
+  rotate: 360deg;
+  background-color: greenyellow;
+}
+
+.circle:hover::after {
+  border: 8px solid rgb(204, 255, 0);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: inherit;
+  left: inherit;
+  translate: inherit;
+  background-color: black;
+  border-radius: inherit;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  height: 24%;
+  width: 24%;
+  top: inherit;
+  left: inherit;
+  translate: inherit;
+  border: 8px solid red;
+  border-radius: inherit;
+}
+
+.inside-circle1 {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  height: 35%;
+  width: 35%;
+  translate: inherit;
+  border: 12px solid black;
+  border-radius: inherit;
+}
+
+.inside-circle2 {
+  position: absolute;
+  top: 5%;
+  right: -14%;
+  height: 35%;
+  width: 35%;
+  border: 12px solid black;
+  border-radius: inherit;
+}
+
+.inside-circle3 {
+  position: absolute;
+  bottom: -18%;
+  left: 50%;
+  translate: -50%;
+  height: 35%;
+  width: 35%;
+  border: 12px solid black;
+  border-radius: inherit;
+}
