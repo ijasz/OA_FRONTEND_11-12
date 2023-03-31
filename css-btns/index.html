@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: 180px;
+        padding-block: 20px;
+        border: 1px solid aquamarine;
+        color: aquamarine;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 0%;
+        background-color: aquamarine;
+        z-index: -1;
+        transition: all 1s;
+      }
+
+      .btn:hover::before {
+        width: 100%;
+      }
+
+      .btn::after {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 0%;
+        background-color: aqua;
+        z-index: -1;
+        transition: all 1s;
+        transition-delay: 0.5s;
+      }
+
+      .btn:hover::after {
+        width: 100%;
+      }
+
+      .btn:hover {
+        color: black;
+        font-weight: bold;
+      }
+
+      .btn:active {
+        scale: 1.1;
+      }
+
+      .btn::selection {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn swipe">SWIPE</div>
+  </body>
+</html>
