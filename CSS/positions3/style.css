@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  margin-block: 10px;
+}
+
+.static {
+  position: static;
+  left: 100px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background-color: white;
+  transition: all 1s;
+}
+
+.absolute:hover {
+  scale: 1.1;
+  rotate: 360deg;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.absolute::before {
+  content: "";
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  background-color: rgb(255, 84, 84);
+  top: 0%;
+  left: 0%;
+}
+
+.absolute::after {
+  content: "";
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  bottom: 0%;
+  right: 0%;
+}
+
+.inner-box {
+  height: 50%;
+  width: 50%;
+  background-color: aquamarine;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+}
+
+.inner-box::before {
+  content: "";
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  bottom: 0%;
+  left: 0%;
+}
+
+.inner-box::after {
+  content: "";
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  top: 0%;
+  right: 0%;
+}
