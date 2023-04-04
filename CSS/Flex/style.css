@@ -1,0 +1,38 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  flex: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.195);
+}
+
+article > p {
+  line-height: 25px;
+}
+
+/* Add your flexbox CSS below here */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid red;
+  flex-wrap: wrap;
+}
