@@ -1,0 +1,85 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  display: flex;
+  gap: 60px;
+  /* background-color: antiquewhite; */
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "I";
+  /* position: absolute; */
+
+  font-size: 100px;
+}
+
+.content::after {
+  content: "CSS";
+  /* position: absolute; */
+  bottom: -200px;
+  left: 20px;
+  font-size: 100px;
+}
+
+.heart {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: relative;
+  rotate: 45deg;
+  animation-name: beat;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  box-shadow: 2px 2px 100px 10px rgba(255, 0, 0, 0.458);
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: red;
+}
+
+.heart::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: -50%;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: red;
+}
+
+@keyframes beat {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.2;
+  }
+}
