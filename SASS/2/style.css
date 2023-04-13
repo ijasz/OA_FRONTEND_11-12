@@ -1,11 +1,13 @@
-.center, .box, body {
+.center,
+.box,
+body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
   height: 100vh;
 }
 
@@ -18,4 +20,4 @@ body {
   height: 50%;
   width: 50%;
   background-color: blueviolet;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
