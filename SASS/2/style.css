@@ -1,0 +1,21 @@
+.center, .box, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+.box .inner-box {
+  height: 50%;
+  width: 50%;
+  background-color: blueviolet;
+}/*# sourceMappingURL=style.css.map */
