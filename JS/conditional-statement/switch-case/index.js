@@ -5,27 +5,27 @@ const date = new Date();
 
 switch (date.getDay()) {
   case 0:
-    console.log("sunday");
+    document.write("sunday");
     break;
   case 1:
-    console.log("monday");
+    document.write("monday");
     break;
   case 2:
-    console.log("tuesday");
+    document.write("tuesday");
     break;
   case 3:
-    console.log("wednesday");
+    document.write("wednesday");
     break;
   case 4:
-    console.log("thursday");
+    document.write("thursday");
     break;
   case 5:
-    console.log("friday");
+    document.write("friday");
     break;
   case 6:
-    console.log("saturday");
+    document.write("saturday");
     break;
   default:
-    console.log("invalid");
+    document.write("invalid");
     break;
 }
