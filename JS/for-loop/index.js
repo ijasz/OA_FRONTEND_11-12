@@ -2,15 +2,10 @@
 
 const fruits = ["apple", "orange", "kiwi", "grapes", "watermelon", "mango"];
 
-const person = {
-  name: "shopkeeper",
-  sellingFruits: [...fruits],
-};
+// person.sellingFruits[0] = "---";
 
-person.sellingFruits[0] = "---";
-
-console.log(fruits);
-console.log(person);
+// console.log(fruits);
+// console.log(person);
 
 // for (let i = 10; i >= 1; i--) {
 //   console.log("hello" + " " + i);
@@ -26,6 +21,20 @@ console.log(person);
 
 // Array.prototype.other = "";
 
+// console.log(fruits.other);
+
 // for (let i of fruits) console.log(i);
 
 // console.log(i);
+
+const person = {
+  name: "shopkeeper",
+  sellingFruits: ["apple", "orange"],
+};
+
+for (let key in person) console.log(person[key]);
+
+console.log("");
+
+console.log(person["name"]);
+console.log(person["sellingFruits"]);
