@@ -1,15 +1,18 @@
-var a = "ocean";
-var b = "ajeeth";
+// console.log(a);
 
-greeting(a);
+// var a = "ocean";
+// var b = "ajeeth";
+
+// greeting(a);
 
 // function statement
 
-function greeting(name) {
-  console.log("hello" + " " + name);
-}
+// function greeting(name) {
+//   console.log("hello" + " " + name);
+// }
 
-greeting(b);
+// greeting(b);
+
 // console.log("start");
 
 // greeting("ocean");
@@ -23,8 +26,42 @@ greeting(b);
 
 // what is the difference between function statement vs function expression
 
-// let a = function greeting(a) {
+// console.log(greeting);
+
+// var a = function greeting(a) {
 //   console.log("hello" + " " + a);
 // };
 
-// a("ocean");
+// Named function
+
+var a = function greeting(a) {
+  console.log("hello" + " " + a);
+};
+
+// Anonymous function
+
+// var a = function (a) {
+//   console.log("hello" + " " + a);
+// };
+
+// Arrow Function => ES6
+
+// var a = (a) => "hello" + " " + a;
+
+// console.log(a("ocean"));
+
+// IIFE
+
+// (any function)()
+
+(() => {
+  console.log("arrow func");
+})();
+
+(function () {
+  console.log("anonymous func");
+})();
+
+(function name() {
+  console.log("named func");
+})();
