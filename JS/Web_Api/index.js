@@ -15,13 +15,13 @@
 // localStorage.setItem("name10", "monica");
 
 // How to get data(key) in local Storage?
-// console.log(localStorage.getItem("name"));
+// console.log(localStorage.getItem("name10"));
 
 // How to delete data(key) in local Storage?
-// localStorage.removeItem("name");
+// localStorage.removeItem("name1");
 
 // How to remove all the localStorage items?
-// localStorage.clear();
+localStorage.clear();
 
 // ----------------------------------------------------
 // Session Storage(Web Api)
@@ -40,10 +40,19 @@
 // sessionStorage.setItem("name10", "monica");
 
 // How to get data(key) in sessionStorage?
-// console.log(sessionStorage.getItem("name"));
+// console.log(sessionStorage.getItem("name1"));
 
 // How to delete data(key) in session Storage?
-// sessionStorage.removeItem("name");
+// sessionStorage.removeItem("name1");
 
 // How to remove all the sessionStorage items?
 // sessionStorage.clear();
+
+// ----------------------------------------------------
+// Create a Cookie with JavaScript
+// ----------------------------------------------------
+
+// document.cookie = "username=karthick ajeeth";
+
+// document.cookie =
+//   "username=karthick ajeeth; expires=Thu, 24 may 2023 11:13:00 UTC";
